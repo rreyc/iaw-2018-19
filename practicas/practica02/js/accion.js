@@ -1,0 +1,19 @@
+$(function(){
+    $("#letra").on("change",function(e){
+        $("h1,h2,p").css({
+            "font-family":$(this).val()
+        });
+    });
+    $("#seleccion").on("change",function(e){
+        if($(this).val()=="todo"){
+            $("p").css({
+                "display":"block"
+            })
+        }
+        else{
+            $("p").css({
+                "display":"none"
+            })
+        }
+    });
+})

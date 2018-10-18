@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Open+Sans:400,400i,700i,800');
+*{
+    font-family: "Open Sans",sans;
+}
+
+body{
+    background-color: #F7F7F7;
+}
+header{
+    background-color:white;
+    margin:auto;
+    max-width:750px;
+}
+header .titulos{
+    width:70%;
+    display:inline-block;
+    float:left;
+}
+
+header figure{
+    width:25%;
+    display:inline-block;
+    margin:0;
+    padding:0;
+}
+
+header img{
+    width:100%;
+}
+
+h1{
+    font-family: Lobster,cursive;
+    text-align: center;
+    font-size:4em;
+    margin:0;
+}
+h2{
+    margin:0;
+    text-align: center;
+    font-family: Lobster,cursive;
+}
+
+main{
+    max-width: 750px;
+    margin:auto;
+    text-align: justify;
+}
+
+aside p{
+    font-size:2em;
+    text-align: center;
+    font-style: italic;
+}
+main p{
+    font-size:1.3em;
+    color:gray;
+}
+
+main p:first-of-type::first-letter{
+    font-size:8em;
+    float:left;
+    margin-top:-.2em;
+    margin-right:.1em;
+    margin-bottom:-.1em;
+    font-family: Lobster,cursive;
+}
+
+strong{
+    font-weight: 800;
+    color: black;
+}
+
+em{
+    font-weight: 700;
+    color: #507297;
+}
+
+nav{
+    background-color: gray;
+    color:white;
+    text-align: center;
+    margin:2em auto;
+    max-width: 750px;
+}
+
+nav ul,nav li{
+    margin:0;
+}
+
+nav li{
+    display:inline-block;
+    width:150px;
+    text-align: center;
+    padding:1em 0;
+}
+nav li:hover{
+    background-color: black;
+}
+nav a{
+    color:white;
+    text-decoration: none;
+    max-width: 750px;
+}
+

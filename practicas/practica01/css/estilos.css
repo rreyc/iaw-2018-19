@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+
+body{
+    margin:0;
+}
+header{
+    position:fixed;
+    height:200px;
+    width:100%;
+    left:0;
+    top:0;
+    z-index:999;
+}
+h1{
+    font-family: Lobster,cursive;
+    font-size:150px;
+    margin:0;
+    color:white;
+    text-align: center;
+    font-weight: normal;
+    text-shadow: black 0 0 50px;
+}
+main{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    bottom:0;
+}
+main>div{
+    position:absolute;
+    width:25%;
+    bottom:0;
+    top:0;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+}
+main>div:hover{
+    background-size: auto 200%;
+    transition: 1s;
+}
+
+.color{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+}
+
+#Aretha{
+    left:0;
+    background-image: url(../img/aretha.jpg);
+}
+#Aretha .color{
+    background-color: rgba(255, 0, 255, 0.3);
+}
+#Dionne{
+    left:25%;
+    background-image: url(../img/dionne.jpg);
+}
+#Dionne .color{
+    background-color: rgba(0, 0, 255, 0.3);
+}
+#Diana{
+    left:50%;
+    background-image: url(../img/diana.jpg);
+}
+#Diana .color{
+    background-color: rgba(255,0,153,.3);
+}
+#Etta{
+    left:75%;
+    background-image: url(../img/etta.jpg);
+}
+#Etta .color{
+    background-color: rgba(0,153,255,.3);;
+}
