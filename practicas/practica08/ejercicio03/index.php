@@ -8,15 +8,17 @@
 </head>
 <body>
 <header class="jumbotron">
-    <h1 class="display-3">COMPROBACIÓN NUMÉRICA</h1>
+    <h1 class="display-3">LOGIN</h1>
 </header>
 <main class="container">
     <div class="row justify-content-center">
         <div class="col-6 col-xs-12">
-            <form action="comprobacion.php">
+            <form action="bienvenido.php">
                 <div class="form-group">
-                    <label for="n">Escribe un número</label>
-                    <input type="number" class="form-control" id="n" name="n" step="0.000001">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" class="form-control" id="usuario" name="usuario">
+                    <label for="pass">Contraseña</label>
+                    <input type="password" class="form-control" id="pass" name="pass">
                 </div>
                 <button class="btn btn-primary btn-block btn-lg">
                     CALCULAR
