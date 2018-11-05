@@ -32,20 +32,23 @@ if (isset($_GET["p"])) {
             bottom: 0;
             overflow: auto;
         }
+        .botones a{
+            font-size:3em;
+        }
 
     </style>
 </head>
 <body>
-<nav class="'container-fluid">
-    <div class="row justify-content-center">
+<nav class="container-fluid">
+    <div class="row justify-content-center botones">
         <?php
         //mostramos el botón de página anterior, pero no si
         //estamos en la primera página
         if ($pagina > 1) {
-            echo '<div class="col-1 text-center"><a href="index.php?p=' . ($pagina - 1) . '"><i class="fa fa-chevron-left fa-3x"></i></a></div>';
+            echo '<div class="col-1 text-center"><a href="index.php?p=' . ($pagina - 1) . '">&lt;</a></div>';
         }
         echo "<div class='col-4'><h1 class='text-center'>Pagina $pagina</h1></div>";
-        echo '<div class="col-1 text-center"><a href="index.php?p=' . ($pagina + 1) . '"><i class="fa fa-chevron-right fa-3x"></i></a></div>';
+        echo '<div class="col-1 text-center"><a href="index.php?p=' . ($pagina + 1) . '">&gt;</a></div>';
         ?>
     </div>
     <div class="row">
