@@ -1,0 +1,34 @@
+<?php
+$display="none";//estado inicial del botón
+if (isset($_COOKIE["tareas"])) {
+    $tareas = unserialize($_COOKIE["tareas"]);
+    $display="block";
+}
+?>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../lib/css/bootstrap.min.css">
+</head>
+<body>
+<h1 class="text-center display-3">Práctica 18</h1>
+<main class="container">
+    <div class="row">
+        <div class="col">
+            <ul>
+                <li><a href="tareas/v1/index.php">Ejercicio 1 (versión sin AJAX)</a></li>
+                <li><a href="tareas/v2/index.php">Ejercicio 1 (versión con AJAX)</a></li>
+                <li><a href="colores/index.php">Ejercicio 2</a></li>
+            </ul>
+        </div>
+
+    </div>
+</main>
+<script src="../../lib/js/jquery-3.2.1.min.js"></script>
+</body>
+</html>
